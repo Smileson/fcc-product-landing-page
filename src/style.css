@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2:wght@500&family=Josefin+Sans&display=swap');
+
+body {
+  max-width: 900px;
+  width: 100%;
+  margin: auto;  
+  font-family: 'Josefin Sans', sans-serif;
+  line-height: 1.5;
+  margin: px;
+}
+
+header {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #B3E8F6;
+  box-shadow: 5px 7px #91561D;
+  width: inherit;
+  max-width: inherit;
+  z-index: 2;
+}
+
+#content {
+  position: relative;
+  top: 4.5em;
+  z-index: 1;
+  margin: auto 10px;
+}
+
+#nav-bar > ul {
+  display: flex;
+}
+
+@media (max-width: 600px) {
+  #nav-bar > ul, header {
+    flex-wrap: wrap;
+  }
+  
+}
+
+#nav-bar > ul > li > a {
+  margin: 20px;
+  color: black;
+  text-decoration: none;
+  font-size: 1.2em;
+}
+
+li {
+  list-style: none;
+}
+
+#brand {
+  display: flex;
+  align-items: center;
+}
+
+#header-img {
+  max-width: 40px;
+  margin: auto;
+}
+
+#overview {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: justify;
+}
+
+@media (max-width: 700px) {
+  #overview {
+  flex-direction: column;
+  }
+}
+
+#overview > img {
+  max-width: 500px;
+}
+
+#features > img {
+  max-width: 250px;
+  margin: auto;
+}
+
+#features {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.feature-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+  margin-top: -6em;
+}
+
+@media (max-width: 700px) {
+  #features {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-row-gap: 0;
+  }
+}
+
+#how-it-works {
+  text-align: center;
+  line-height: 0;
+}
+
+form {
+  text-align: center;
+}
+
+h3, label {
+  font-size: 2em;
+  text-align: center;
+}
+
+h4 {
+  font-size: 1.5em;
+  margin-bottom: 0;
+}
